@@ -1,3 +1,3 @@
 # ProjectCamila
 Web Design and Development Project
-C:\Users\HP\Documents\GitHub\ProjectCamila\Images
+https://github.com/camiladtc/ProjectCamila/blob/main/poodle.jpg?raw=true
