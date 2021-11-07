@@ -1,0 +1,170 @@
+/*general structure*/
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+	background:#FEF9EF;
+    margin: 10px 20px 10px 50px;
+    
+}
+header {
+    background-color:#A2D2FF;
+    padding: 0px;
+    margin: 0px;
+    height: 200px;
+  }
+
+img{
+    width: 200px;
+    height: 200px;
+    margin: 0px;
+}
+
+#everything {
+width: 1000px;
+background-color:#FEF9EF;
+line-height: 1.5;
+}  
+
+#slogan {
+    color: #FF865E;
+    margin: 0px;
+    width: 500px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    display: inline-block;
+} 
+
+#slogan h3{
+    margin: 50px 50px 0px 50px;
+}
+
+#topnav {
+	background-color: #FEE440;
+    height: 35px;
+    font-size: 20px;
+    margin: 0px;
+}
+
+h1, h2 {
+    font-family: 'Dancing Script', cursive, bold;
+    color: #FF865E
+    }
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+li{
+    display: inline;
+    float: left;
+    margin-right: 50px;
+  }
+
+div{
+    margin: 0px;
+    padding: 0px;
+    border-width: 0px;
+}
+
+footer {
+    background-color: #FEE440;
+    color: #FF865E;
+    display: inherit;   
+}
+
+.logo{
+    display: inline;
+}
+
+.content{
+width: 800px;
+
+}
+
+.post span{
+display: inline;
+width: 600px;
+}
+
+.post{
+    width: 800px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.post img{
+    display: inline;
+    width: 200px;
+    margin: 0px;
+}
+.post h1{
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+}
+
+.post span{
+    width: 600px;
+}
+
+.post_odd{
+    width: 600px;
+    float: left;
+}
+.post_even{
+    width: 600px;
+    float: right;
+}
+
+.contact{
+    background-color:#FEE440;
+    padding: 30px;
+}
+
+/*contact form*/
+
+button:hover{
+    background-color: #A2D2FF;
+    border: #FF865E;
+    color: #FF865E;
+}
+
+form{
+    padding: 40px;
+}
+
+textarea{
+    width: 500px;
+    height: 200px;
+}
+
+hr{
+    height: 1px;
+    border: none;
+    margin-bottom: 30px;
+}
+
+button{
+    padding: 10px;
+    font-size: 20px;
+    background: none;
+    border: 1px solid #A2D2FF;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.form-group label{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.form-group input{
+    width: 320px;
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+

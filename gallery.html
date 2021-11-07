@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		<title> PAWSe </title>
+		<link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+	</head>
+	<body>
+    <div id="everything">
+      <header>
+          <img src="Images/logo.png" alt="logo">
+          <h3 id="slogan">Take a moment to enjoy life with your best friend</h3>
+      </header>
+        <div id="topnav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+	        <h1>Gallery</h1>
+
+        <table>
+            <tr>
+                <!--table cell spans 4 coloumns --!>
+                <th colspan="4">Which dog breed suits you best?</th>
+            </tr>
+            <tr>
+                <td colspan="4">Click on the images below to know more</td>
+            </tr>
+            <tr>
+                <td> <!-- onclick function sends as parameter all id elements. the first one will be displayed or hidden while all the other ones will always be hidden. this avoids texts from multiple parts showing up at the same time -->               
+                <img src="Images/cavalier_king_charles.jpg" onclick="divToHide('q1','q6','q2','q3','q4','q5');" alt="Show Answer">
+                </td>
+                
+                <td>                
+                    <img src="Images/labrador.jpeg" onclick="divToHide('q2','q6','q1','q3','q4','q5');" alt="Show Answer">
+                </td>
+
+                <td>                
+                <img src="Images/poodle.jpg" onclick="divToHide('q3','q6','q1','q2','q4','q5');" alt="Show Answer">
+                </td>
+                <td>
+                    <div >
+                    <p id="q1" style="display: none">This fluff ball is extremely affectionate and loves to cuddle. The King Charles Spaniel is
+                        known as "The Love Sponge" because of its cuddling nature. Because of their sweet nature and 
+                        eagerness to please, these puppies are said to be easy to teach and fantastic with children.</p>
+                    <p id="q2" style="display: none">Labs are friendly, outgoing, and high-spirited. They are highly athletic dogs that love 
+                        being outdoors, which encourages their human companions to do the same.</p>
+                    <p id="q3" style="display: none">Poodles are super social, hypoallergenic dogs and love being in the company of their owners.
+                        They share the same people-pleasing personality traits that Labs do, and the Poodle's high level of 
+                        intelligence qualifies them for a variety of service dog jobs.</p>
+                </div></td>
+            </tr>
+            <tr>
+                <td>                
+                    <img src="https://www.dogtime.com/assets/uploads/2011/03/puppy-development.jpg" onclick="divToHide('q4','q6','q1','q2','q3','q5');" alt="Show Answer">
+                </td>
+
+                <td>                
+                <img src="Images/Yorkshire-Terrier.jpg" onclick="divToHide('q5','q6','q1','q2','q3','q4');" alt="Show Answer">
+                </td>
+
+                <td>                
+                    <img src="Images/Vizsla-MP.jpg" onclick="divToHide('q6','q1','q2','q3','q4','q5');" alt="Show Answer">
+                </td>
+                <td>
+
+                    <div >
+                        <p id="q4" style="display: none">Few dog breeds have the ability for love and loyalty like Golden Retrievers do. They're 
+                            also known for being docile and well-behaved. They're extremely friendly, intelligent, 
+                            and devoted to their human companions.</p>
+                        <p id="q5" style="display: none">Yorkies are one of the most loyal, affectionate, and trainable breeds due to their tendency 
+                            to form strong bonds with their human. Because Yorkies are so small, they're a particularly good 
+                            dog to have if you live in an apartment and don't have access to a yard.</p>
+                        <p id="q6" style="display: none">Viszlas create very close ties with their owners and hate being left alone, which makes this buddies wonderful companions for anyone suffering from depression.</p>
+                    </div></td>
+
+            </tr>
+        </table>
+
+        <script>
+            //get elements by id for paragraphs 
+            function divToHide(id1,id2,id3,id4,id5,id6) {
+                var div1 = document.getElementById(id1);
+                var div2 = document.getElementById(id2);
+                var div3 = document.getElementById(id3);
+                var div4 = document.getElementById(id4);
+                var div5 = document.getElementById(id5);
+                var div6 = document.getElementById(id6);
+
+                // if/else statement for hide/show functionality
+                if (div1.style.display === "none") {
+                    div1.style.display = "block";
+                    div2.style.display = "none";
+                    div3.style.display = "none";
+                    div4.style.display = "none";
+                    div5.style.display = "none";
+                    div6.style.display = "none";
+                }
+                else if (div1.style.display === "block") {
+
+                div1.style.display = "none";
+            }
+                }
+        </script>
+       
+	   </div>
+	</body>
+</html>
